@@ -18,3 +18,13 @@ color: white;
     color: aliceblue;
     line-height: 50px;
 }
+
+.menu li a p {
+}
+
+
+.contents {
+    width: 1000px;
+    height: 1000px;
+    background-color: aquamarine;
+}
