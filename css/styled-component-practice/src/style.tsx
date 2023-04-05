@@ -7,7 +7,7 @@ import styled from 'styled-components';
 // 옆에 backtick을 주고, 안에다가 css style을 작성한다
 
 
-const StyledButton = styled.button`
+const Button = styled.button`
 
     background-color: #228be6;
     color: #fff;
@@ -18,10 +18,11 @@ const StyledButton = styled.button`
 
 `;
 
-export default StyledButton;
+export default Button;
 
 // 와 ㄹㅇ진짜 컴포넌트 같음 ㅋㅋㅋㅋㅋ app.tsx로 내보내기 해보자
 
 //근데 자동완성 안뜨는게 좀 불편하네 이거 해결할 수 있는 방법 있나 알아보자
+    //====>> vscode-styled-components 익스텐션을 깔았더니 자동완성이 된다!!!
 
 //export 딴방식도 되나 알아보자
