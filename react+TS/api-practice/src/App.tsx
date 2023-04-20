@@ -1,11 +1,15 @@
-import Users from "./Users";
+// import Users from "./Users";
+import { ChartData } from "./chart";
+import "./chart.css"
+
 
 function App() {
 
-  
+
   return (
     <div className="App">
-      <Users/>
+      {/* <Users /> */}
+      <ChartData />
     </div>
   );
 }

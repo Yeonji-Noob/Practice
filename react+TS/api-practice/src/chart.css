@@ -1,0 +1,24 @@
+.chart-album-flaxbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-album-flax {
+    display: flex;
+    width: 260px;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+
+.chart-album-cover {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.chart-album-textbox {
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 12px;
+}

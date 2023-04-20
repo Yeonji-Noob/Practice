@@ -31,9 +31,17 @@ import { useEffect, useState } from 'react';
 // 상태는 총 3가지 종류를 다뤄야 함 
 // 1. 요청 결과 2. 로딩상태 3. 에러
 
+interface userData {
+
+    id: number;
+    username: string;
+    name: string;
+    email: string;
+}
+
 const Users = () => {
 
-    const [users, setUsers] = useState<null | Array<{ id: number, username: string, name: string }>>(null); // 1번 항목
+    const [users, setUsers] = useState<null | Array<userData>>(null); // 1번 항목
     const [loading, setLoading] = useState<boolean>(false); // 2번 항목
     const [error, setError] = useState<null>(null); // 3번 항목
 
@@ -93,9 +101,9 @@ return(
         {/* 'never' 타입 오류는 상태 변수 'users'의 타입이 null로 설정된 경우 발생합니다. 
         이 오류를 해결하려면 'users' 유형을 'null | Array<{ id: number, username: string, name: string }>>'을 사용하여 
         null 또는 사용자 개체 배열을 보유할 수 있습니다. */}
-      {users.map((user: { id: number, username: string, name: string }) => (
+      {users.map((user:userData) => (
         <li key={user.id}>
-          {user.username} ({user.name})
+          {user.username} ({user.name}) {user.email}
         </li>
       ))}
     </ul>
